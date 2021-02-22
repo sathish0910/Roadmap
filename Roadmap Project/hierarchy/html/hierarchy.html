@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office"
+    xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <script src="../Resources/hierarchy/js/balkangraph.OrgChart.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.8.4/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="../Resources/hierarchy/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../Resources/hierarchy/css/jquery.ganttView.css" />
+    <link rel="stylesheet" type="text/css" href="../Resources/hierarchy/css/gantt-chart.css" />
+    <script type="text/javascript" src="../Resources/hierarchy/js/date.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="../Resources/hierarchy/js/jquery.ganttView.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Resources/hierarchy/css/hierarchy.css?v=1.0">
+    <script src="../Resources/hierarchy/js/hierarchy.js?v=1"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="tree" style="height: 525px"></div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalChart" role="dialog" data-backdrop="static" style="top: 10% !important">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content" style="width: 975px; position: relative; right: 50%; height: 500px">
+                <div class="modal-header">
+                    <h4 class="modal-title ganttTitle"></h4>
+                    <button type="button" class="close ganttClose" data-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body ganttBody" style="overflow: auto;">
+                    <div id="ganttChart" style="width: 1262px; position: relative; right: 1%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog" data-backdrop="static" style="top: 30% !important;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title taskTitle"></h4>
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body taskBody"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

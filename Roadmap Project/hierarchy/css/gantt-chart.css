@@ -1,0 +1,42 @@
+body {
+    font-family: tahoma, verdana, helvetica;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+.modal {
+    top: 20% !important;
+}
+
+.modal-header {
+    background-color: #5514b4 !important;
+}
+
+.modal-header h4 {
+    color: #fff;
+}
+
+.modal-body div {
+    line-height: 18px;
+}
+
+.modal-backdrop.show {
+    opacity: 0 !important;
+}
+
+.modal-header .close {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.customStyle {
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+.ganttview-hzheader-month{
+    white-space: nowrap !important;
+}

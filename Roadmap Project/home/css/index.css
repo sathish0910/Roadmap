@@ -1,0 +1,78 @@
+#carouselIndicators img {
+    width: 100%;
+}
+
+.task-link-headers {
+    background-color: #6495ed;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.task-progress {
+    width: 67.7%;
+    margin-left: 15px;
+    height: 300px;
+    border: 1px solid #000;
+}
+
+.useful-links {
+    width: 30%;
+    height: 300px;
+    overflow-x: auto;
+    margin-right: 0;
+    border: 1px solid #000;
+}
+
+.rounded-list {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.rounded-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 2% .5em 8%;
+    background: #90ee90;
+    color: #000;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+}
+
+.rounded-list a:hover{
+    background: #90ee90;
+    color: #000;
+}
+
+.rounded-list a:hover:before{
+    transform: rotate(360deg);
+}
+
+.rounded-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -15px;
+    background: #90ee90;
+    color: #fff;
+    height: 2em;
+    width: 2em;
+    line-height: 20px;
+    font-weight: bold;
+    border: .3em solid #fff;
+    text-align: center;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+#chartdiv, #chartdiv1 {
+    width: 50%;
+    height: 250px;
+}
